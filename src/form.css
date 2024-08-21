@@ -1,0 +1,76 @@
+employee-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.employee-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.employee-form input, .employee-form select {
+    padding: 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.employee-form input:required:invalid,
+.employee-form select:required:invalid {
+    border-color: #ff4d4d;
+}
+
+.employee-form span {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.employee-form button {
+    grid-column: 1 / -1;
+    padding: 10px 20px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employee-form button:hover {
+    background-color: #ff404d;
+}
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-field.error input,
+.form-field.error select {
+    border-color: red;
+}
+
+.form-field span {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
